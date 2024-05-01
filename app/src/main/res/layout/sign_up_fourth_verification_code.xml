@@ -1,0 +1,112 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    android:padding="20dp"
+    tools:context=".SignUp.SignUp_Fourth_Verification_otp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/back_press_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/arrow_back"
+            android:backgroundTint="@color/white"
+            android:transitionName="back_press_trasnition" />
+
+        <TextView
+            android:id="@+id/code_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/cyberjunkies_font"
+            android:letterSpacing="0.35"
+            android:padding="5dp"
+            android:text="CO\nDE"
+            android:textColor="@color/white"
+            android:textSize="85sp"
+            android:textStyle="bold"
+            android:transitionName="create_account_trasnition" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Verification"
+            android:textAllCaps="true"
+            android:textColor="@color/background_verylight"
+            android:textSize="40sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/No_disp_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Enter OTP sented on \n03001234567"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <com.chaos.view.PinView
+            android:id="@+id/pinViewBoxs"
+            style="@style/PinWidget.PinView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:cursorVisible="true"
+            android:inputType="number"
+            android:itemBackground="@color/black"
+            android:paddingVertical="10dp"
+            android:textColor="@color/white"
+            app:cursorColor="@color/white"
+            app:itemCount="6"
+            app:itemHeight="45dp"
+            app:itemRadius="5dp"
+            app:itemWidth="45dp"
+            app:lineColor="@color/white"
+            app:lineWidth="3dp"/>
+
+        <Button
+            android:id="@+id/verify_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="40dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/cyberjunkies_font"
+            android:letterSpacing="0.1"
+            android:padding="10dp"
+            android:text="Verify now"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:transitionName="next_btn_trasnition"
+            android:onClick="callVerifyFunction"/>
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="40dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/cyberjunkies_font"
+            android:letterSpacing="0.1"
+            android:padding="10dp"
+            android:text="Login Now"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:transitionName="next_btn_trasnition"
+            android:onClick="LoginFunction"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</ScrollView>

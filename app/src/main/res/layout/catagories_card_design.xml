@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="290dp"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/c_image"
+            android:layout_width="160dp"
+            android:layout_height="180dp"
+            android:src="@drawable/featured_img_2"
+            android:scaleType="centerCrop"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/c_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Milk Shop"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:paddingLeft="5dp"/>
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:rating="4.2"
+                android:padding="5dp"/>
+            <TextView
+                android:id="@+id/c_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The tones of hotels are now on a single touch"
+                android:textSize="20sp"
+                android:padding="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

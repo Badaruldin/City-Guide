@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    tools:context=".SignUp.SignUp_First">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/back_press_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/arrow_back"
+            android:backgroundTint="@color/white"
+            android:transitionName="back_press_trasnition" />
+
+        <TextView
+            android:id="@+id/create_account_ET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/signika_negative_bold"
+            android:padding="5dp"
+            android:text="CREATE\nACCOUNT"
+            android:textColor="@color/white"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            android:transitionName="create_account_trasnition" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fullname_tiet"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            app:boxStrokeWidth="3dp"
+            app:endIconMode="clear_text"
+            app:hintTextColor="@color/white"
+            app:startIconDrawable="@drawable/edit_icon"
+            app:startIconTint="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:paddingLeft="5dp"
+                android:textColor="@color/white"
+                android:textIsSelectable="false"
+                android:textSize="20sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/username_tiet"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+
+            app:boxStrokeWidth="3dp"
+            app:endIconMode="clear_text"
+            app:hintTextColor="@color/white"
+            app:startIconDrawable="@drawable/profile_icon"
+            app:startIconTint="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:paddingLeft="5dp"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email_tiet"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+
+            app:boxStrokeWidth="3dp"
+            app:endIconMode="clear_text"
+            app:hintTextColor="@color/white"
+            app:startIconDrawable="@drawable/email_icoc"
+            app:startIconTint="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="5dp"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password_tiet"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            app:boxStrokeWidth="3dp"
+            app:endIconMode="password_toggle"
+            app:hintTextColor="@color/white"
+            app:startIconDrawable="@drawable/password_icon"
+            app:startIconTint="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:maxLength="10"
+                android:paddingLeft="5dp"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/next_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/cyberjunkies_font_a"
+            android:onClick="callNextScreen"
+            android:padding="8dp"
+            android:text="Next"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:transitionName="next_btn_trasnition" />
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/teal_200"
+            android:fontFamily="@font/cyberjunkies_font"
+            android:padding="8dp"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:transitionName="login_btn_trasnition" />
+    </LinearLayout>
+</ScrollView>

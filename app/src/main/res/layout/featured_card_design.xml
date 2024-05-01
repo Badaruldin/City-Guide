@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    android:layout_margin="05dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+    <ImageView
+        android:id="@+id/featured_image"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:src="@drawable/featured_img"
+        android:scaleType="centerCrop"
+        android:padding="5dp"/>
+    <TextView
+        android:id="@+id/featured_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TasteMaster"
+        android:textSize="25dp"
+        android:textColor="@color/background_dark"/>
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:rating="3.6"/>
+        <TextView
+            android:id="@+id/featured_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="the only place for its special taste and enviornment."
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:layout_margin="8dp"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

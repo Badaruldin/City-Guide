@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "787450222363",
+    "project_id": "check-application-cityguide",
+    "storage_bucket": "check-application-cityguide.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:787450222363:android:df9d73c46e2bd1bdd0a5be",
+        "android_client_info": {
+          "package_name": "com.badaruldin.check_application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "787450222363-ceb4f1apcneu7pvd7oei2dcjneai0psa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCePtB16drlgKKJSU7gv0fcgefCgoikxMw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "787450222363-ceb4f1apcneu7pvd7oei2dcjneai0psa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
